@@ -166,7 +166,10 @@ a {
 .trending {
   display: flex;
   align-items: center;
-  line-height: 0.5;
+  margin-top: 10px;
+}
+.trending:first-child {
+  margin-top: 0px;
 }
 .username {
   font-weight: bold;
