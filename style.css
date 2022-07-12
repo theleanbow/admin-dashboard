@@ -1,5 +1,6 @@
 :root {
   font-family: "Roboto", sans-serif;
+  --accent-color: #1c92d2;
 }
 body {
   margin: 0;
@@ -12,7 +13,7 @@ body {
 
 .sidebar {
   grid-area: 1/1/1/2;
-  background-color: #1c92d2;
+  background-color: var(--accent-color);
   color: #fff;
   padding-left: 15px;
 }
@@ -82,10 +83,9 @@ ul {
   display: flex;
   align-items: center;
 }
-.hiCard {
-  line-height: 0.3;
-}
+
 .username {
+  overflow: hidden;
   font-size: 1.5rem;
 }
 .buttons {
@@ -100,7 +100,7 @@ button {
   padding: 0px 20px;
   color: #fff;
   border: none;
-  background-color: #1c92d2;
+  background-color: var(--accent-color);
 }
 
 .main-content {
@@ -131,11 +131,15 @@ button {
   box-shadow: antiquewhite;
   background-color: #fff;
   display: flex;
+  overflow: hidden;
 }
 .cardDecription {
   padding: 0px 30px 0px 10px;
 }
-
+a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
 .main2 {
   display: grid;
 }
